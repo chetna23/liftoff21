@@ -1,0 +1,66 @@
+{
+defaultSeverity: "warning",
+extends: [
+"tslint:recommended"
+],
+linterOptions: {
+exclude: [
+"node_modules/**"
+]
+},
+rules: {
+arrow-return-shorthand: [
+true,
+"multiline"
+],
+curly: [
+true,
+"ignore-same-line"
+],
+file-name-casing: [
+true,
+"kebab-case"
+],
+indent: [
+true,
+"spaces",
+2
+],
+interface-name: false,
+no-async-without-await: true,
+no-duplicate-switch-case: true,
+no-duplicate-variable: true,
+no-return-await: true,
+object-literal-sort-keys: [
+true,
+{
+options: "match-declaration-order"
+}
+],
+ordered-imports: false,
+quotemark: [
+true,
+"single"
+],
+semicolon: [
+true,
+{
+options: "ignore-interfaces"
+}
+],
+trailing-comma: [
+true,
+{
+multiline: {
+objects: "always",
+arrays: "always",
+functions: "never",
+typeLiterals: "ignore"
+},
+singleline: "never",
+esSpecCompliant: true
+}
+],
+typedef: true
+}
+}
